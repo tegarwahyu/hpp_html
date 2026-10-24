@@ -1,0 +1,16 @@
+HHP LAND ARRANGEMENT — VERSI HTML MANDIRI
+
+Buka index.html dengan klik dua kali di Chrome/Edge/Strawberry.
+Tidak memerlukan PHP, Laravel, Composer, npm, database, server, atau internet untuk aset halaman.
+Seluruh CSS, JavaScript, logo, gambar, font, dan video sudah tertanam dalam index.html.
+File cukup besar karena mencakup dua video asli.
+
+FITUR
+Navigasi responsif, menu mobile, video play/pause, animasi scroll, tautan destinasi dengan pilihan otomatis, FAQ, validasi tanggal dan jumlah, ringkasan konsultasi dan salin ringkasan.
+Tidak ada booking, pembayaran, atau penyimpanan data ke server.
+Nomor WhatsApp sengaja kosong; tidak menyalin .env atau rahasia Laravel.
+Untuk mengaktifkan WhatsApp: edit data-whatsapp="" pada form di index.html menjadi nomor resmi internasional tanpa +/spasi; ubah teks tombol dan keterangan kontak sesuai kebutuhan. Jangan gunakan nomor contoh.
+Fitur salin memakai clipboard jika diizinkan browser; jika tidak, teks dipilih untuk Ctrl+C.
+
+Proyek Laravel asli tidak diubah. Pertahankan dua file lisensi font saat distribusi.
+Sebelum publikasi, verifikasi kontak, legalitas, serta hak penggunaan video/aset dan watermark.
