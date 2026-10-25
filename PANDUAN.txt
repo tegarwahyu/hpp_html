@@ -1,16 +1,19 @@
-HHP LAND ARRANGEMENT — VERSI HTML MANDIRI
+HHP LAND ARRANGEMENT — PROTOTIPE HTML
 
-Buka index.html dengan klik dua kali di Chrome/Edge/Strawberry.
-Tidak memerlukan PHP, Laravel, Composer, npm, database, server, atau internet untuk aset halaman.
-Seluruh CSS, JavaScript, logo, gambar, font, dan video sudah tertanam dalam index.html.
-File cukup besar karena mencakup dua video asli.
+Versi terbaru: landing page dan detail Layanan Kami dari proyek Laravel.
 
-FITUR
-Navigasi responsif, menu mobile, video play/pause, animasi scroll, tautan destinasi dengan pilihan otomatis, FAQ, validasi tanggal dan jumlah, ringkasan konsultasi dan salin ringkasan.
-Tidak ada booking, pembayaran, atau penyimpanan data ke server.
-Nomor WhatsApp sengaja kosong; tidak menyalin .env atau rahasia Laravel.
-Untuk mengaktifkan WhatsApp: edit data-whatsapp="" pada form di index.html menjadi nomor resmi internasional tanpa +/spasi; ubah teks tombol dan keterangan kontak sesuai kebutuhan. Jangan gunakan nomor contoh.
-Fitur salin memakai clipboard jika diizinkan browser; jika tidak, teks dipilih untuk Ctrl+C.
+HALAMAN
+- index.html: landing page, ringkasan empat layanan, formulir konsultasi lokal.
+- layanan.html: Hotel bernusuk, Handling bandara, Visa, Mutawif dan Mutawifah.
+- assets/, css/, js/, fonts/: aset yang sama dengan proyek Laravel.
 
-Proyek Laravel asli tidak diubah. Pertahankan dua file lisensi font saat distribusi.
-Sebelum publikasi, verifikasi kontak, legalitas, serta hak penggunaan video/aset dan watermark.
+CARA MEMBUKA
+Buka index.html di browser. Tautan antarhalaman memakai alamat relatif sehingga mendukung GitHub Pages, termasuk repository pada subfolder. Tidak memerlukan PHP, Laravel, database, npm, atau proses build.
+
+UNTUK GIT / STATIC HOSTING
+Commit index.html, layanan.html, folder assets/css/js/fonts, panduan, dan lisensi font. Jangan hanya mengunggah index.html karena aset sekarang dipisahkan agar bisa dipakai bersama oleh dua halaman. Konfigurasi hosting agar melayani root repository yang berisi index.html. Folder .git yang sudah ada tidak diubah. Belum ada commit, push, atau publikasi otomatis.
+
+BATASAN
+Tidak ada halaman admin, login, upload gambar, database, atau API. Empat profil pemandu aktif beserta gambarnya disalin dari proyek Laravel ke assets/guides/ sebagai konten statis. Nama, kategori, dan urutan mengikuti data sumber saat penyalinan; perubahan berikutnya di Laravel tidak otomatis tersinkron. Form konsultasi hanya menyusun/menyalin ringkasan di perangkat, tidak mengirim data, memesan hotel, atau melakukan pembayaran. Nomor WhatsApp sengaja kosong. Video dan poster mengikuti aset proyek; ilustrasi Madinah tetap seperti aslinya.
+
+Hak penggunaan aset tetap perlu dipastikan sebelum publikasi. Lisensi font disertakan di fonts/ dan lisensi lama di root tetap dipertahankan.
