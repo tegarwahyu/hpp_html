@@ -25,3 +25,15 @@ Prototype tidak memiliki CRUD/admin. Perubahan di Laravel setelah salinan ini ti
 
 VERIFIKASI PEMBARUAN
 Dua kartu dan dua bio ditemukan; semua referensi src/href/poster lokal pada index.html dan layanan.html tersedia. Bagian HTML di luar section pemandu sama persis dengan sebelum perubahan. CSS layanan identik dengan sumber Laravel. Tampilan desktop diperiksa di browser lokal; foto, nama, bio, dan format miring tampil. Aturan mobile <=600px disalin dari Laravel, tetapi belum diuji secara visual pada viewport mobile.
+
+
+PEMBARUAN SLIDER KATEGORI — 8 November 2026
+- Dua bagian bertingkat: Muthawwif di atas, Muthawwifah di bawah; masing-masing memiliki slider independen.
+- Nama kategori yang disimpan tetap Mutawif/Mutawifah sesuai admin lama. Pemandu aktif dikelompokkan berdasarkan kategori, lalu mengikuti sort_order dan id yang sudah digunakan.
+- Tiap slide mempertahankan foto, nama dan bio. Tombol panah, posisi slide, scroll horizontal/swipe dan keyboard ArrowLeft/ArrowRight/Home/End didukung. Tidak ada autoplay atau profil duplikat dalam data asli.
+- Panah hanya muncul bila kategori punya lebih dari satu profil. Kategori kosong menampilkan keterangan.
+- Perubahan pada view layanan, CSS, JavaScript baru guide-carousel.js, serta petunjuk kategori di admin. Tidak mengubah controller, database, autentikasi, bio, atau fitur booking. Tidak memerlukan migrasi.
+- 20 tes Laravel / 118 assertions lulus pada SQLite in-memory, termasuk pemisahan kategori, urutan, profil nonaktif, keadaan kosong dan satu profil. Sintaks JavaScript lolos node --check.
+- Browser dengan fixture sementara dua profil per kategori: tombol berikutnya memindahkan Muthawwif ke 2/2 tanpa mengubah Muthawwifah (tetap 1/2). Pada iframe viewport 390px, kartu menjadi satu kolom tanpa overflow halaman; scroll horizontal memindahkan Muthawwifah ke 2/2 tanpa mengubah Muthawwif. Ini uji browser mobile-width, bukan uji sentuhan perangkat fisik.
+- Halaman Laravel asli HTTP 200, dua kategori dengan masing-masing satu profil aktif. Tidak ada data uji yang dimasukkan ke database. Prototype disinkronkan dengan konten publik terbaru, termasuk koreksi kategori yang sudah ada di sumber.
+- Cadangan file sebelum perubahan: folder category-slider-backup-1794142110783 pada workspace chat ini, bukan cadangan database. Belum deploy.
