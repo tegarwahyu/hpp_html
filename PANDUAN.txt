@@ -14,6 +14,14 @@ UNTUK GIT / STATIC HOSTING
 Commit index.html, layanan.html, folder assets/css/js/fonts, panduan, dan lisensi font. Jangan hanya mengunggah index.html karena aset sekarang dipisahkan agar bisa dipakai bersama oleh dua halaman. Konfigurasi hosting agar melayani root repository yang berisi index.html. Folder .git yang sudah ada tidak diubah. Belum ada commit, push, atau publikasi otomatis.
 
 BATASAN
-Tidak ada halaman admin, login, upload gambar, database, atau API. Empat profil pemandu aktif beserta gambarnya disalin dari proyek Laravel ke assets/guides/ sebagai konten statis. Nama, kategori, dan urutan mengikuti data sumber saat penyalinan; perubahan berikutnya di Laravel tidak otomatis tersinkron. Form konsultasi hanya menyusun/menyalin ringkasan di perangkat, tidak mengirim data, memesan hotel, atau melakukan pembayaran. Nomor WhatsApp sengaja kosong. Video dan poster mengikuti aset proyek; ilustrasi Madinah tetap seperti aslinya.
+Tidak ada halaman admin, login, upload gambar, database, atau API. Dua profil pemandu aktif terbaru, foto, dan bio berformat disalin dari halaman publik Laravel ke assets/guides/ dan layanan.html sebagai konten statis pada 8 November 2026. Nama, kategori, bio, dan urutan mengikuti data sumber saat penyalinan; perubahan berikutnya di Laravel tidak otomatis tersinkron. Form konsultasi hanya menyusun/menyalin ringkasan di perangkat, tidak mengirim data, memesan hotel, atau melakukan pembayaran. Nomor WhatsApp sengaja kosong. Video dan poster mengikuti aset proyek; ilustrasi Madinah tetap seperti aslinya.
 
 Hak penggunaan aset tetap perlu dipastikan sebelum publikasi. Lisensi font disertakan di fonts/ dan lisensi lama di root tetap dipertahankan.
+
+
+PEMBARUAN PROFIL — 8 NOVEMBER 2026
+Bagian pemandu pada layanan.html kini mengikuti versi Laravel yang disetujui: kartu gelap horizontal, foto di kiri, nama beraksen emas dan bio di kanan. Pada layar <=600px, profil disusun vertikal. Format strong/em dari bio sumber dipertahankan. CSS layanan disamakan dengan versi Laravel. Konten layanan lain, landing page dan formulir konsultasi tidak diubah.
+Prototype tidak memiliki CRUD/admin. Perubahan di Laravel setelah salinan ini tidak otomatis mengubah HTML; lakukan sinkronisasi ulang sebelum publikasi. Foto lama yang tidak digunakan tetap disimpan agar tidak menghapus aset Anda. Belum ada commit, push, atau deploy.
+
+VERIFIKASI PEMBARUAN
+Dua kartu dan dua bio ditemukan; semua referensi src/href/poster lokal pada index.html dan layanan.html tersedia. Bagian HTML di luar section pemandu sama persis dengan sebelum perubahan. CSS layanan identik dengan sumber Laravel. Tampilan desktop diperiksa di browser lokal; foto, nama, bio, dan format miring tampil. Aturan mobile <=600px disalin dari Laravel, tetapi belum diuji secara visual pada viewport mobile.
